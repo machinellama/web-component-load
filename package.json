@@ -1,0 +1,40 @@
+{
+  "name": "web-component-load",
+  "version": "1.0.0",
+  "description": "Load Web Components into a JavaScript application",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MachineLlama/web-component-load"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "auto-publish": "npm run build && npm version patch --force && npm publish",
+    "auto-link": "npm run build && npm link"
+  },
+  "author": {
+    "name": "MachineLlama"
+  },
+  "keywords": [
+    "angular",
+    "react",
+    "web component",
+    "javascript",
+    "dynamic"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
